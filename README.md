@@ -1,2 +1,2 @@
 # csillagvirag_migration
-CsillagVirag - SPA migration
+# CsillagVirag - SPA migration
