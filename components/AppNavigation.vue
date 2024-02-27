@@ -30,9 +30,3 @@ onMounted(() => {
   // console.log("navigationTree", props.navigationTree);
 });
 </script>
-
-<style lang="scss" scoped>
-div {
-  content: "";
-}
-</style>
