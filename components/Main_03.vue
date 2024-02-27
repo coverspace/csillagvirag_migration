@@ -5,13 +5,9 @@
         class="flex flex-col justify-center items-center border-2 border-red-500 my-2"
       >
         <div>
-          <ContentDoc path="/main/banner" v-slot="{ doc }">
-            <h1 class="text-center">{{ doc.title }}</h1>
+          <ContentDoc path="main/block_03" v-slot="{ doc }">
             <small>{{ doc.description }}</small>
-            <p class="text-center">
-              <ContentRenderer :value="doc" />
-            </p>
-            <button class="text-center">{{ doc.button }}</button>
+            <ContentRenderer :value="doc" />
           </ContentDoc>
         </div>
       </div>

@@ -9,7 +9,7 @@
         >
           <li v-for="(item, index) in navigationTree" :key="index">
             <NuxtLink :to="item._path === '/main' ? '/' : item._path">
-              {{ item.title }}
+              {{ item.children[0].title }}
             </NuxtLink>
           </li>
         </ul>
@@ -19,11 +19,15 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   navigationTree: {
     type: Array,
     default: () => [],
   },
+});
+
+onMounted(() => {
+  // console.log("navigationTree", props.navigationTree);
 });
 </script>
 

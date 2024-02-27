@@ -4,13 +4,12 @@
       <div
         class="flex flex-col justify-center items-center border-2 border-red-500 my-2"
       >
-        <ContentDoc path="/home/banner" v-slot="{ doc }">
-          <h1 class="mx-auto">{{ doc.title }}</h1>
-          <p class="py-6">
+        <div>
+          <ContentDoc path="main/block_04" v-slot="{ doc }">
+            <small>{{ doc.description }}</small>
             <ContentRenderer :value="doc" />
-          </p>
-          <button class="btn btn-primary">{{ doc.button }}</button>
-        </ContentDoc>
+          </ContentDoc>
+        </div>
       </div>
     </div>
   </div>
@@ -19,7 +18,11 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-div {
-  content: "";
+main {
+  border: 1px solid green;
+
+  h1:nth-child(3) {
+    background: green;
+  }
 }
 </style>

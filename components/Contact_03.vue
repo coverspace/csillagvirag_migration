@@ -4,14 +4,11 @@
       <div
         class="flex flex-col justify-center items-center border-2 border-red-500 my-2"
       >
-        <ContentDoc path="/home/block01" v-slot="{ doc }">
+        <ContentDoc path="/contact/block_03" v-slot="{ doc }">
           <div class="text-center lg:text-left">
-            <h1 class="text-center">{{ doc.title }}</h1>
-            <p class="py-6">
-              <ContentRenderer :value="doc" />
-            </p>
+            <h1 class="text-center">{{ doc.button }}</h1>
+            <ContentRenderer :value="doc" />
           </div>
-          <button class="text-center">{{ doc.button }}</button>
         </ContentDoc>
       </div>
     </div>
